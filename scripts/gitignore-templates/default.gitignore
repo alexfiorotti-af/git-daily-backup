@@ -1,0 +1,82 @@
+# =====================================================================
+#  .gitignore padrao da AF - o que NAO vai para o GitHub
+#  (copiado automaticamente para projetos novos)
+# =====================================================================
+
+# --- Segredos: nunca, em hipotese nenhuma ---------------------------
+.env
+.env.*
+*.env
+!.env.example
+!.env.exemplo
+!*.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.kdbx
+id_rsa*
+id_ed25519*
+*credential*.json
+*service-account*.json
+*serviceaccount*.json
+*[Ss]enha*.txt
+*[Pp]assword*.txt
+
+# --- Pasta combinada para o que e privado ---------------------------
+# Tudo que estiver numa pasta chamada _privado fica so no seu disco.
+_privado/
+
+# --- Dependencias e builds (sao recriados com npm install / build) ---
+node_modules/
+.next/
+.nuxt/
+.vercel/
+.turbo/
+.cache/
+.venv/
+venv/
+__pycache__/
+*.pyc
+coverage/
+
+# --- Midia pesada (vai para o Google Drive, nao para o Git) ---------
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.psd
+*.zip
+*.rar
+*.7z
+*.tar
+*.tgz
+*.gz
+*.iso
+*.exe
+*.msi
+*.bin
+
+# --- Lixo do sistema e do Office -------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.tmp
+*.log
+
+# --- Arquivos de senha/acesso e exportacoes de gerenciador de senhas ---
+*[Ss][Ee][Nn][Hh][Aa]*.txt
+*[Aa][Cc][Ee][Ss][Ss][Oo]*.txt
+*[Aa][Cc][Ee][Ss][Ss][Oo]*.pdf
+*[Tt][Oo][Kk][Ee][Nn]*.txt
+*bitwarden*.csv
+*bitwarden*.json
+*importacao-bitwarden*

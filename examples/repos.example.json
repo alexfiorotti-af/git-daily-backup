@@ -1,0 +1,27 @@
+{
+  "githubUsuario": "your-github-username",
+  "cofre": "notes",
+  "limiteMB": 45,
+  "horario": "21:00",
+  "repos": [
+    {
+      "nome": "notes",
+      "caminho": "%USERPROFILE%\\Documents\\notes",
+      "modo": "direto",
+      "descricao": "Obsidian vault - processed last so it carries the backup report"
+    },
+    {
+      "nome": "projects",
+      "caminho": "%USERPROFILE%\\Documents\\Projects",
+      "modo": "direto",
+      "monorepo": true,
+      "descricao": "All project folders; sub-folders that are their own repos are skipped automatically"
+    },
+    {
+      "nome": "client-website",
+      "caminho": "%USERPROFILE%\\Documents\\Projects\\client-website",
+      "modo": "snapshot",
+      "descricao": "Auto-deploys on push to main, so the daily backup goes to backup/auto instead"
+    }
+  ]
+}
